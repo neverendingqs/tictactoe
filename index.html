@@ -1,21 +1,22 @@
 <!DOCTYPE html>
 <html>
   <body>
+    <div class="title"><strong>Tic Tac Toe</strong></div>
     <div class="grid">
       <div class="column"> 
-        <div class="square">X</div>
-        <div class="square">O</div>
-        <div class="square">X</div>
+        <div class="square" style="border-bottom: solid; border-right: solid;">X</div>
+        <div class="square" style="border-top: solid; border-bottom: solid; border-right: solid;">O</div>
+        <div class="square" style="border-top: solid; border-right: solid;">X</div>
       </div>
       <div class="column"> 
-        <div class="square">O</div>
-        <div class="square">X</div>
-        <div class="square">O</div>
+        <div class="square" style="border-left: solid; border-bottom: solid; border-right: solid;">O</div>
+        <div class="square" style="border: solid;">X</div>
+        <div class="square" style="border-left: solid; border-top: solid; border-right: solid;">O</div>
       </div>
       <div class="column"> 
-        <div class="square">X</div>
-        <div class="square">O</div>
-        <div class="square">X</div>
+        <div class="square" style="border-left: solid; border-bottom: solid;">X</div>
+        <div class="square" style="border-top: solid; border-left: solid; border-bottom: solid;">O</div>
+        <div class="square" style="border-top: solid; border-left: solid;">X</div>
       </div>
     </div>
   </body>
@@ -23,12 +24,18 @@
   <style>
     html, body {
       height: 100%;
+      margin: 0 20%;
     }
     body {
       margin: 0;
     }
+    .title {
+      font-size: 6em;
+      height: 15%;
+      text-align: center;
+    }
     .grid {
-      height: 100%;
+      height: 80%;
       padding: 0;
       margin: 0;
       display: flex;
@@ -37,10 +44,10 @@
       width: 33%;
     }
     .square {
+      height: 33%;
       display: flex;
       align-items: center;
       justify-content: center;
-      height: 33%;
     }
   </style>
 </html>
