@@ -1,28 +1,33 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <script src="https://unpkg.com/vue@2.6.10/dist/vue.js"></script>
+  </head>
   <body>
-    <div class="title"><strong>Tic Tac Toe</strong></div>
-    <div class="grid">
-      <div class="column"> 
-        <div class="square" style="border-bottom: solid; border-right: solid;">X</div>
-        <div class="square" style="border-top: solid; border-bottom: solid; border-right: solid;">O</div>
-        <div class="square" style="border-top: solid; border-right: solid;">X</div>
-      </div>
-      <div class="column"> 
-        <div class="square" style="border-left: solid; border-bottom: solid; border-right: solid;">O</div>
-        <div class="square" style="border: solid;">X</div>
-        <div class="square" style="border-left: solid; border-top: solid; border-right: solid;">O</div>
-      </div>
-      <div class="column"> 
-        <div class="square" style="border-left: solid; border-bottom: solid;">X</div>
-        <div class="square" style="border-top: solid; border-left: solid; border-bottom: solid;">O</div>
-        <div class="square" style="border-top: solid; border-left: solid;">X</div>
+    <div id="app">
+      <div class="title"><strong>Tic Tac Toe</strong></div>
+      <div class="grid">
+        <div class="column"> 
+          <div class="square" style="border-bottom: solid; border-right: solid;">X</div>
+          <div class="square" style="border-top: solid; border-bottom: solid; border-right: solid;">O</div>
+          <div class="square" style="border-top: solid; border-right: solid;">X</div>
+        </div>
+        <div class="column"> 
+          <div class="square" style="border-left: solid; border-bottom: solid; border-right: solid;">O</div>
+          <div class="square" style="border: solid;">X</div>
+          <div class="square" style="border-left: solid; border-top: solid; border-right: solid;">O</div>
+        </div>
+        <div class="column"> 
+          <div class="square" style="border-left: solid; border-bottom: solid;">X</div>
+          <div class="square" style="border-top: solid; border-left: solid; border-bottom: solid;">O</div>
+          <div class="square" style="border-top: solid; border-left: solid;">X</div>
+        </div>
       </div>
     </div>
   </body>
 
   <style>
-    html, body {
+    html, body, #app {
       height: 100%;
       margin: 0 20%;
     }
